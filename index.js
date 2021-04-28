@@ -9,7 +9,6 @@ function calculaHoras() {
     // Limpa os campos calculados
     document.getElementById('diferencaPrimeiroTurno').innerHTML = '';
     document.getElementById('tempoRestante').innerHTML = '';
-    document.getElementById('horaSaidaMinima').innerHTML = '';
     document.getElementById('saldoHoras').innerHTML = '';
 
 
@@ -51,8 +50,8 @@ function diferencaHoras(horaInicial, horaFinal) {
         horaInicial = aux;
     }
 
-    hIni = horaInicial.split(':');
-    hFim = horaFinal.split(':');
+    var hIni = horaInicial.split(':');
+    var hFim = horaFinal.split(':');
 
     horasTotal = parseInt(hFim[0], 10) - parseInt(hIni[0], 10);
     minutosTotal = parseInt(hFim[1], 10) - parseInt(hIni[1], 10);

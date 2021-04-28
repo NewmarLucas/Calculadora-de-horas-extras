@@ -1,0 +1,21 @@
+body { 
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 13px; width:960px; margin:0 auto;
+}
+label{
+    width: 170px; display:inline-block;  text-align:right;
+}
+input{
+    margin-bottom:3px;
+}
+span{ 
+	display:inline-table; 
+	height:20px; 
+	margin-bottom:3px; 
+	width:50px; 
+	vertical-align:middle; 
+	border:1px solid #ccc; 
+	background-color:#FbFbFb;
+}
+.calculados{
+    color:#777;
+}

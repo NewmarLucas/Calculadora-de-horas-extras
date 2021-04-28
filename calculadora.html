@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Cálculos de horas </title>
+	<link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+
+<h3>Calculador de horários para folha de ponto</h3>
+
+<label id="totalHorasDia">Total de horas/dia:</label> 
+<input type="time" class="hora" size="5" id="totalHorasDia" /> <br/><br/>
+
+<table>
+	<tr>
+    	<td>
+			<label id="horaEntrada">Hora de entrada:</label> 
+			<input type="time" class="hora" size="5" id="horaEntrada" /> <br/>
+
+			<label id="horaIdaAlmoco">Hora de almoço:</label> 
+			<input type="time" class="hora" size="5" id="horaIdaAlmoco" />
+        </td>
+		<td class="calculados">
+        	<br/>
+            <br/>
+            <br/>
+			<label for="diferencaPrimeiroTurno">-> Tempo transcorrido: </label> 
+			<span id="diferencaPrimeiroTurno"></span> <br/>
+
+            <label for="tempoRestante">Tempo restante:</label> 
+            <span id="tempoRestante"></span>
+		</td>
+    </tr>
+    <tr>
+    	<td>
+            <label id="horaVoltaAlmoco">Retorno do almoço:</label> 
+            <input type="time" class="hora" size="5" id="horaVoltaAlmoco" /> <br/>
+			
+			<label id="horaSaida">Hora de saída:</label> 
+            <input type="time" class="hora" size="5" id="horaSaida" />
+        </td>
+    	<td class="calculados">
+
+            <label for="saldoHoras">Horas a ver/dever:</label> 
+            <span id="saldoHoras"></span>
+		</td>
+    </tr>
+</table>
+
+</body>
+
+
+</html>

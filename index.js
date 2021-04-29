@@ -21,7 +21,7 @@ function calculaHoras() {
     var saldoHoras = diferencaHoras(totalHorasDia, somaTurnos);
     document.getElementById('saldoHoras').innerHTML = saldoHoras;
 
-    if (totalHorasDia < somaTurnos) {
+    if (totalHorasDia > somaTurnos) {
         document.getElementById('saldoHoras').innerHTML = "-" + saldoHoras;
     }
 

@@ -9,51 +9,64 @@
 </head>
 
 <body>
+	<header>
+		<h1>Calculador de horários para folha de ponto</h3>
+	</header>
+	<div id="container">
+		<div>
+			<h2>Total de horas/dia:</h2>
+			<input id="totalHorasDia" type="time" class="hora" /> <br /><br />
+		</div>
+		<hr>
+		<div id="dados">
+			<div id="dadosContainer">
+				<div id="dadosEntrada">
+					<div id="inputDados">
+						<h3>Hora de entrada: </h3>
+						<input id="horaEntrada" type="time" class="hora" /> <br />
+					</div>
+					<div id="inputDados">
+						<h3>Hora de almoço: </h3>
+						<input id="horaIdaAlmoco" type="time" class="hora" />
+					</div>
+				</div>
+				<div id="dadosSaida">
+					<br />
+					<br />
+					<h3 for="diferencaPrimeiroTurno">-> Tempo transcorrido: </h3>
+					<span id="diferencaPrimeiroTurno"></span> <br />
+				</div>
+			</div>
+			<div id="dadosContainer">
+				<div id="dadosEntrada">
+					<div id="inputDados">
+						<h3>Retorno do almoço: </h3>
+						<input id="horaVoltaAlmoco" type="time" class="hora" />
+					</div>
+					<br />
+					<div id="inputDados">
+						<h3>Hora de saída: </h3>
+						<input id="horaSaida" type="time" class="hora" />
+					</div>
+				</div>
+				<div id="dadosSaida">
+					<br />
+					<br />
+					<h3 for="diferencaSegundoTurno">-> Tempo transcorrido: </h3>
+					<span id="diferencaSegundoTurno"></span> <br />
+				</div>
+			</div>
 
-	<h3>Calculador de horários para folha de ponto</h3>
+			<button type="submit" onclick="calculaHoras()">Calcular</button>
 
-	<label>Total de horas/dia:</label>
-	<input id="totalHorasDia" type="time" class="hora" size="5" id="totalHorasDia" /> <br /><br />
-	<hr>
-	<table>
-		<tr>
-			<td>
-				<label>Hora de entrada:</label>
-				<input id="horaEntrada" type="time" class="hora" size="5" id="horaEntrada" /> <br />
+			<div id="saida">
+				<h3 for="saldoHoras">Horas extras/devedoras</h3>
+				<span id="saldoHoras"></span>
+			</div>
+		</div>
 
-				<label>Hora de almoço:</label>
-				<input id="horaIdaAlmoco" type="time" class="hora" size="5" id="horaIdaAlmoco" />
-			</td>
-			<td class="calculados">
-				<br />
-				<br />
-				<label for="diferencaPrimeiroTurno">-> Tempo transcorrido: </label>
-				<span id="diferencaPrimeiroTurno"></span> <br />
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label>Retorno do almoço:</label>
-				<input id="horaVoltaAlmoco" type="time" class="hora" size="5" id="horaVoltaAlmoco" /> <br />
 
-				<label>Hora de saída:</label>
-				<input id="horaSaida" type="time" class="hora" size="5" id="horaSaida" />
-			</td>
-			<td class="calculados">
-				<br />
-				<br />
-				<label for="diferencaSegundoTurno">-> Tempo transcorrido: </label>
-				<span id="diferencaSegundoTurno"></span> <br />
-			</td>
-		</tr>
-		<td class="calculados">
-
-			<label for="saldoHoras">Horas extras/devedoras</label>
-			<span id="saldoHoras"></span>
-		</td>
-	</table>
-
-	<button type="submit" onclick="calculaHoras()">Calcular</button>
+	</div>
 
 </body>
 
